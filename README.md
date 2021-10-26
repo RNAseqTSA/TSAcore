@@ -4,7 +4,7 @@ The code in this folder contains the core TSAFinder algorithm. It has been teste
 
 # Prerequisites
 # Python packages:
-os \ 
+os  \ 
 numpy \
 sys \
 subprocess \
@@ -22,7 +22,7 @@ Control fastq file
 # Arguments:
 1. kmer length (currently supports 8-11) 
 2. getmeta. Set to 'getmeta' to produce the metadata, which is a file with each tumor specific peptide and its associated rnaseq read. Set to 'FALSE' to exclude this step. 
-3. nfiles. Number of parallel processes used. Minimum of 4. Recommended > 20. 
+3. nfiles. Number of parallel processes (cores) used. Minimum of 4. Tested with 20. 
 4. patient2processn. Control sample name. 
 5. patient2processt. Tumor sample name. 
 6. hlatype. HLA genotype. e.g. ['HLA-A33:01', 'HLA-A24:01', 'HLA-B54:01', 'HLA-B58:01', 'HLA-C03:01'] 

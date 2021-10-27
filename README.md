@@ -13,9 +13,9 @@ itertools \
 linecache \
 biopython (seq2hla dependency)
 # Software:
-netMHCpan (tested with version 4.0)
-seq2hla (tested with version 1.0)
-bowtie (seq2hla dependency)
+netMHCpan (tested with version 4.0) \
+seq2hla (tested with version 1.0) \
+bowtie (seq2hla dependency) \
 R (seq2hla dependency)
 
 # Inputs

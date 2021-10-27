@@ -10,9 +10,13 @@ sys \
 subprocess \
 multiprocessing \
 itertools \
-linecache
+linecache \
+biopython (seq2hla dependency)
 # Software:
 netMHCpan (tested with version 4.0)
+seq2hla (tested with version 1.0)
+bowtie (seq2hla dependency)
+R (seq2hla dependency)
 
 # Inputs
 Tumor fastq file \
@@ -25,7 +29,7 @@ Control fastq file
 3. nfiles. Number of parallel processes (cores) used. Minimum of 4. Tested with 20. 
 4. patient2processn. Control sample name. 
 5. patient2processt. Tumor sample name. 
-6. hlatype. HLA genotype. e.g. ['HLA-A33:01', 'HLA-A24:01', 'HLA-B54:01', 'HLA-B58:01', 'HLA-C03:01'] 
+6. hlatype. HLA genotype. Set to 'NULL' to run seq2HLA on your control sample. Specify HLA genotypes in the following format e.g. ['HLA-A33:01', 'HLA-A24:01', 'HLA-B54:01', 'HLA-B58:01', 'HLA-C03:01'] 
 
 Enter the neoantigen_toolbox_v4.3.py file and change the following: \
 readlen_tumor. The tumor sample read length. \
